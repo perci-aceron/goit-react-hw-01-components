@@ -18,16 +18,16 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
 
       <ul className={styles.stats}>
         <li>
-          <span className={styles.label}>Followers: </span>
-          <span className={styles.quantity}>{followers}</span>
+          <span className={styles.label}>Followers</span>
+          <span className={styles.quantity}>{followers.toLocaleString()}</span>
         </li>
         <li>
-          <span className={styles.label}>Views: </span>
-          <span className={styles.quantity}>{views}</span>
+          <span className={styles.label}>Views</span>
+          <span className={styles.quantity}>{views.toLocaleString()}</span>
         </li>
         <li>
-          <span className={styles.label}>Likes: </span>
-          <span className={styles.quantity}>{likes}</span>
+          <span className={styles.label}>Likes</span>
+          <span className={styles.quantity}>{likes.toLocaleString()}</span>
         </li>
       </ul>
     </div>
